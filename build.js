@@ -22,6 +22,5 @@ await ["adjectives", "intros", "nounsOther", "nounsSetlike"].reduce((prev, curr)
 let data_str = JSON.stringify(data, null, 0);
 let html = pug.compileFile("pug/index.pug")({ data_str });
 
-fs.writeFile("public/index.html", html, "utf8", (err) => {
-  if (err) throw err;
-});
+fs.writeFileSync("public/index.html", html, "utf8");
+fs.copyFileSync("public/index.html", "public/404.html");

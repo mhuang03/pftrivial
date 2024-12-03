@@ -1,9 +1,0 @@
-[[redirects]]
-  from = "proofistrivial.netlify.app"
-  to = "proofistrivial.com"
-  status = 301
-  force = true
-
-[[redirect]]
-  from = "/*"
-  to = "/index.html"
