@@ -24,3 +24,7 @@ let html = pug.compileFile("pug/index.pug")({ data_str });
 
 fs.writeFileSync("public/index.html", html, "utf8");
 fs.copyFileSync("public/index.html", "public/404.html");
+
+let apijs = fs.readFileSync("netlify/functions/api.js", "utf8");
+apijs.replace("const data = null;", `const data = "${data_str}";`);
+fs.writeFileSync("netlify/functions/api.js", apijs, "utf8");
