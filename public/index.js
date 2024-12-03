@@ -25,10 +25,13 @@ const generateTriviality = () => {
   return { intro, adj1: adj1[0], adj2: adj2[0], noun1, noun2 };
 };
 
-let t = generateTriviality();
-window.addEventListener("DOMContentLoaded", () => {
+const renderNewTriviality = () => {
+  let t = generateTriviality();
   document.getElementById("intro").innerText = `Proof is trivial! ${t.intro}`;
   for (let field of ["adj1", "adj2", "noun1", "noun2"]) {
     document.getElementById(field).innerText = t[field];
   }
-});
+};
+
+window.addEventListener("DOMContentLoaded", renderNewTriviality);
+document.getElementById("reload").addEventListener("click", renderNewTriviality);

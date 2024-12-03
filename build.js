@@ -28,4 +28,3 @@ fs.copyFileSync("public/index.html", "public/404.html");
 let apijs = fs.readFileSync("netlify/functions/api.js", "utf8");
 apijs = apijs.replace("const data = null;", `const data = ${data_str};`);
 fs.writeFileSync("netlify/functions/api.js", apijs, "utf8");
-console.log(apijs);
