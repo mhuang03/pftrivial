@@ -1,4 +1,5 @@
 import fs from "node:fs";
+import pug from "pug";
 
 let data = {};
 
@@ -19,4 +20,13 @@ await ["adjectives", "intros", "nounsOther", "nounsSetlike"].reduce((prev, curr)
 }, Promise.resolve());
 
 let data_str = JSON.stringify(data, null, 0);
-console.log(data_str);
+let inlinejs = fs.readFileSync("static/index.js", "utf8");
+let inlinecss = fs.readFileSync("static/index.css", "utf8");
+let html = pug.compileFile("pug/index.pug")({ data_str, inlinejs });
+
+const errorLogger = (err) => {
+  if (err) throw err;
+};
+fs.writeFile("public/index.html", html, "utf8", errorLogger);
+fs.copyFile("static/index.js", "public/index.js", errorLogger);
+fs.copyFile("static/index.css", "public/index.css", errorLogger);
