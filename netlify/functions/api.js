@@ -23,7 +23,7 @@ const generateTriviality = () => {
   let noun2 = produceVariant(selectRandom(data["nounsAll"]), true);
   let intro = produceVariant(selectRandom(data["intros"]), adj1[1]);
 
-  return { intro, adj1: adj1[0], adj2: adj2[0], noun1, noun2 };
+  return { intro, adj1: adj1[0], noun1, adj2: adj2[0], noun2 };
 };
 
 export default async (req, context) => {
