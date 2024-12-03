@@ -1,10 +1,5 @@
 body {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  height: 100vh;
-  margin: 0px;
+  margin-top: 40px;
 }
 
 .content {
@@ -44,7 +39,7 @@ p {
   color: black;
   background: none;
   border: none;
-  width: 20px;
+  width: 30px;
   margin-top: 20px;
   padding: 0px;
   animation: rotating 2s linear infinite;
