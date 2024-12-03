@@ -42,11 +42,17 @@ p {
   width: 30px;
   margin-top: 20px;
   padding: 0px;
+}
+
+#reload:hover {
+  cursor: pointer;
+}
+
+#relicon {
   animation: rotating 2s linear infinite;
   animation-play-state: paused;
 }
 
-#reload:hover, #reload:focus {
-  cursor: pointer;
+#reload:hover>#relicon, #reload:focus>#relicon {
   animation-play-state: running;
 }
