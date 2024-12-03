@@ -4,6 +4,7 @@ body {
   align-items: center;
   justify-content: center;
   height: 100vh;
+  margin: 0px;
 }
 
 .content {
@@ -22,4 +23,5 @@ p {
 
 .sep {
   font-size: 40px;
+  margin-top: 20px;
 }
