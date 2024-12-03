@@ -33,6 +33,10 @@ p {
 
 #reload {
   width: 20px;
+  margin-top: 20px;
+  background: none;
+  border: none;
+  padding: 0px;
 }
 
 @-webkit-keyframes rotating {
@@ -65,7 +69,8 @@ p {
   }
 }
 
-#reload:hover {
+#reload:hover, #reload:focus {
+  cursor: pointer;
   -webkit-animation: rotating 2s linear infinite;
   -moz-animation: rotating 2s linear infinite;
   -ms-animation: rotating 2s linear infinite;

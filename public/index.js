@@ -34,4 +34,7 @@ const renderNewTriviality = () => {
 };
 
 window.addEventListener("DOMContentLoaded", renderNewTriviality);
-document.getElementById("reload").addEventListener("click", renderNewTriviality);
+document.getElementById("reload").addEventListener("click", (e) => {
+  renderNewTriviality();
+  e.blur();
+});
