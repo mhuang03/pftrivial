@@ -5,10 +5,11 @@ html(lang="en")
     script const data = !{data_str};
     script(src='/index.js' defer)
     link(rel='stylesheet' href='/index.css')
-  body(style="display:flex; flex-direction:column; text-align:center")
-    p#intro Proof is trivial!
-    p#adj1
-    p#noun1
-    p#elemof whose elements are
-    p#adj2
-    p#noun2
+  body
+    .content
+      p#intro.sep Proof is trivial!
+      p#adj1.word
+      p#noun1.word
+      p#elemof.sep whose elements are
+      p#adj2.word
+      p#noun2.word
