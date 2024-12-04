@@ -1,0 +1,8 @@
+fundamental theorem of calculus
+Pythagorean theorem
+Jordan-Chevalley theorem
+Artin-Schreier theorem
+Peano axioms
+inverse function theorem
+Banach fixed point theorem
+Picard-Lindelöf theorem

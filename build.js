@@ -15,9 +15,12 @@ const readWords = (fName) => {
   });
 };
 
-await ["adjectives", "containments", "degraders", "methods", "nounsOther", "nounsSetlike"].reduce((prev, curr) => {
-  return prev.then(() => readWords(curr)).catch((e) => console.log(e));
-}, Promise.resolve());
+await ["adjectives", "containments", "degraders", "methods", "nounsOther", "nounsSetlike", "theorems", "uses"].reduce(
+  (prev, curr) => {
+    return prev.then(() => readWords(curr)).catch((e) => console.log(e));
+  },
+  Promise.resolve()
+);
 
 let data_str = JSON.stringify(data, null, 0);
 let html = pug.compileFile("pug/index.pug")({ data_str });
