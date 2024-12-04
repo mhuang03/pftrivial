@@ -6,3 +6,34 @@ Peano axioms
 inverse function theorem
 Banach fixed point theorem
 Picard-Lindelöf theorem
+Arzelà–Ascoli theorem
+*Lagrange's theorem
+*Cauchy's theorem
+rank-nullity theorem
+first isomorphism theorem
+second isomorphism theorem
+third isomorphism theorem
+fourth isomorphism theorem
+Galois correspondence theorem
+hairy ball theorem
+Sprague-Grundy theorem
+fundamental theorem of arithmetic
+axiom of choice
+Zermelo–Fraenkel axioms
+fundamental theorem of algebra
+Chinese remainder theorem
+fundamental theorem of symmetric polynomials
+alternate interior angles theorem
+angle bisector theorem
+*Arrow's impossibility theorem
+autonomous convergence theorem
+Aztec diamond theorem
+*Bézout's theorem
+Binomial theorem
+Sylow theorems
+*Fermat's little theorem
+*Fermat's last theorem
+*Noether's theorem
+*Hilbert's basis theorem
+Stone-Weierstrass Theorem
+Bolzano-Weierstrass Theorem

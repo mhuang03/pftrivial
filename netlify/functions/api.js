@@ -25,9 +25,21 @@ const generateTriviality = () => {
   let noun1 = produceVariant(selectRandom(data["nounsSetlike"]), false);
   let noun2 = produceVariant(selectRandom(data["nounsAll"]), true);
   let use = selectRandom(data["uses"]);
-  let thm = selectRandom(data["theorems"]);
+  let thm = extractVariantInfo(selectRandom(data["theorems"]));
 
-  return { degr: degr[0], method, adj1: adj1[0], adj1Vowel: adj1[1], cont, noun1, adj2: adj2[0], noun2, use, thm };
+  return {
+    degr: degr[0],
+    method,
+    adj1: adj1[0],
+    adj1Vowel: adj1[1],
+    cont,
+    noun1,
+    adj2: adj2[0],
+    noun2,
+    use,
+    thm: thm[0],
+    thmNoThe: thm[1],
+  };
 };
 
 export default async (req, context) => {

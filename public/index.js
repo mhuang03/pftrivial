@@ -24,15 +24,27 @@ const generateTriviality = () => {
   let noun1 = produceVariant(selectRandom(data["nounsSetlike"]), false);
   let noun2 = produceVariant(selectRandom(data["nounsAll"]), true);
   let use = selectRandom(data["uses"]);
-  let thm = selectRandom(data["theorems"]);
+  let thm = extractVariantInfo(selectRandom(data["theorems"]));
 
-  return { degr: degr[0], method, adj1: adj1[0], adj1Vowel: adj1[1], cont, noun1, adj2: adj2[0], noun2, use, thm };
+  return {
+    degr: degr[0],
+    method,
+    adj1: adj1[0],
+    adj1Vowel: adj1[1],
+    cont,
+    noun1,
+    adj2: adj2[0],
+    noun2,
+    use,
+    thm: thm[0],
+    thmNoThe: thm[1],
+  };
 };
 
 const renderNewTriviality = () => {
   let t = generateTriviality();
   document.getElementById("intro").innerText = `Proof is trivial! ${t.degr} ${t.method} ${t.adj1Vowel ? "an" : "a"}`;
-  document.getElementById("hint").innerText = `(Hint: ${t.use} the ${t.thm})`;
+  document.getElementById("hint").innerText = `(Hint: ${t.use} ${t.thmNoThe ? "" : "the "}${t.thm})`;
   for (let field of ["adj1", "adj2", "cont", "noun1", "noun2"]) {
     document.getElementById(field).innerText = t[field];
   }
