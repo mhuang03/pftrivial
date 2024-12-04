@@ -2,9 +2,15 @@ doctype html
 html(lang="en")
   head
     title Proof is Trivial!
+    meta(charset="utf8")
+    meta(name="description" content="A website for all your trivializing needs! Explains every mathematical proof you could ever write.")
+    meta(name="theme-color" content="#FFFFFF")
+    link(rel="icon" href="favicon.svg")
+    link(rel="mask-icon" href="mask-icon.svg" color="#FFFFFF")
+    link(rel="apple-touch-icon" href="apple-touch-icon.png")
+    link(rel='stylesheet' href=`${DEV ? "" : "/"}index.css`)
     script const data = !{data_str};
     script(src=`${DEV ? "" : "/"}index.js` defer)
-    link(rel='stylesheet' href=`${DEV ? "" : "/"}index.css`)
   body
     .content
       p#intro.sep Proof is trivial!
