@@ -35,5 +35,36 @@ Sylow theorems
 *Fermat's last theorem
 *Noether's theorem
 *Hilbert's basis theorem
-Stone-Weierstrass Theorem
-Bolzano-Weierstrass Theorem
+Stone-Weierstrass theorem
+Bolzano-Weierstrass theorem
+*Bochner's tube theorem
+Brahmagupta theorem
+*Burnside's theorem
+*Burnside's lemma
+*Zorn's lemma
+*CPCTC
+*Carmichael's theorem
+*Carnot's theorem
+*Schur's lemma
+central limit theorem
+mean value theorem
+intermediate value theorem
+*Ceva's theorem
+*Cramer's rule
+*De Moivre's theorem
+*Euclid's theorem
+exterior angle theorem
+extreme value theorem
+*Fatou's theorem
+four color theorem
+Fourier theorem
+Frobenius theorem
+*Fubini's theorem
+fundamental theorem of arbitrage-free pricing
+universal property of the tensor product
+*L'Hôpital's rule
+Riemann hypothesis
+spectral theorem
+Poincaré conjecture
+existence of infinite primes
+unprovability of the axiom of choice
