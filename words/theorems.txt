@@ -73,7 +73,7 @@ law of large numbers
 impossibility of angle trisection
 infinite monkey theorem
 inscribed angle theorem
-Heron's formula
+*Heron's formula
 law of sines
 law of cosines
 *Stewart's theorem
