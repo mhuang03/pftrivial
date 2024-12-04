@@ -11,24 +11,26 @@ const produceVariant = (str, isVariant) => {
     : str.replaceAll(/\((.*)\)/g, "").replaceAll(/\[(.*)\]/g, "$1");
 };
 
-const extractVowelInfo = (str) => {
+const extractVariantInfo = (str) => {
   return str.charAt(0) == "*" ? [str.substring(1, str.length), true] : [str, false];
 };
 
 const generateTriviality = () => {
-  let adj1 = extractVowelInfo(selectRandom(data["adjectives"]));
-  let adj2 = extractVowelInfo(selectRandom(data["adjectives"]));
+  let degr = extractVariantInfo(selectRandom(data["degraders"]));
+  let method = produceVariant(selectRandom(data["methods"]), degr[1]);
+  let adj1 = extractVariantInfo(selectRandom(data["adjectives"]));
+  let adj2 = extractVariantInfo(selectRandom(data["adjectives"]));
+  let cont = selectRandom(data["containments"]);
   let noun1 = produceVariant(selectRandom(data["nounsSetlike"]), false);
   let noun2 = produceVariant(selectRandom(data["nounsAll"]), true);
-  let intro = produceVariant(selectRandom(data["intros"]), adj1[1]);
 
-  return { intro, adj1: adj1[0], adj2: adj2[0], noun1, noun2 };
+  return { degr: degr[0], method, adj1: adj1[0], adj1Vowel: adj1[1], cont, noun1, adj2: adj2[0], noun2 };
 };
 
 const renderNewTriviality = () => {
   let t = generateTriviality();
-  document.getElementById("intro").innerText = `Proof is trivial! ${t.intro}`;
-  for (let field of ["adj1", "adj2", "noun1", "noun2"]) {
+  document.getElementById("intro").innerText = `Proof is trivial! ${t.degr} ${t.method} ${t.adj1Vowel ? "an" : "a"}`;
+  for (let field of ["adj1", "adj2", "cont", "noun1", "noun2"]) {
     document.getElementById(field).innerText = t[field];
   }
 };

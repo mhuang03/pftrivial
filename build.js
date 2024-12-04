@@ -15,7 +15,7 @@ const readWords = (fName) => {
   });
 };
 
-await ["adjectives", "intros", "nounsOther", "nounsSetlike"].reduce((prev, curr) => {
+await ["adjectives", "containments", "degraders", "methods", "nounsOther", "nounsSetlike"].reduce((prev, curr) => {
   return prev.then(() => readWords(curr)).catch((e) => console.log(e));
 }, Promise.resolve());
 

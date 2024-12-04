@@ -51,3 +51,24 @@ total
 left invertible
 *exact
 *empty
+semisimple
+bilinear
+*asymmetric
+*infinite
+commutatitive
+equicontinuous
+Riemann integrable
+*irreducible
+*unitary
+*orthogonal
+perpendicular
+Galois
+*invariant
+canonical
+cyclic
+cyclotomic
+separable
+divisible
+primitive
+oscillating
+dense
