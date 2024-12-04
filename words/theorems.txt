@@ -29,7 +29,7 @@ angle bisector theorem
 autonomous convergence theorem
 Aztec diamond theorem
 *Bézout's theorem
-Binomial theorem
+binomial theorem
 Sylow theorems
 *Fermat's little theorem
 *Fermat's last theorem
@@ -68,3 +68,44 @@ spectral theorem
 Poincaré conjecture
 existence of infinite primes
 unprovability of the axiom of choice
+law of large numbers
+*Gödel's incompleteness theorem
+impossibility of angle trisection
+infinite monkey theorem
+inscribed angle theorem
+Heron's formula
+law of sines
+law of cosines
+*Stewart's theorem
+*Ptolemy's theorem
+*Jacobi's four-square theorem
+*Kawasaki's theorem
+Kepler conjecture
+Banach-Tarski paradox
+*Kruskal's tree theorem
+*Bertrand's paradox
+*Lie's theorem
+*Maxwell's theorem
+no free lunch theorem
+open mapping theorem
+parallel axis theorem
+*Pick's theorem
+pizza theorem
+*Rademacher's theorem
+*Bobkov's inequality
+rational root theorem
+residue theorem
+uncountability of the continuum
+universal approximation theorem
+*Von Neumann's theorem
+*Vieta's formulas
+well-ordering theorem
+*Kronecker's lemma
+ABC conjecture
+Collatz conjecture
+*Goldbach's conjecture
+twin prime conjecture
+parallel postulate
+*Euler's identity
+*Parseval's identity
+*De Morgan's laws
