@@ -30,7 +30,7 @@ autonomous convergence theorem
 Aztec diamond theorem
 *Bézout's theorem
 binomial theorem
-Sylow theorems
+*Sylow's theorems
 *Fermat's little theorem
 *Fermat's last theorem
 *Noether's theorem
