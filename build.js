@@ -1,6 +1,12 @@
 import fs from "node:fs";
 import pug from "pug";
 
+if (process.argv.length > 3) {
+  console.error("Expected at most one argument!");
+  process.exit(1);
+}
+const DEV = process.argv.length == 3 && process.argv[2] === "dev";
+
 let data = {};
 
 const readWords = (fName) => {
@@ -23,11 +29,13 @@ await ["adjectives", "containments", "degraders", "methods", "nounsOther", "noun
 );
 
 let data_str = JSON.stringify(data, null, 0);
-let html = pug.compileFile("pug/index.pug")({ data_str });
+let html = pug.compileFile("pug/index.pug")({ data_str, DEV });
 
 fs.writeFileSync("public/index.html", html, "utf8");
 fs.copyFileSync("public/index.html", "public/404.html");
 
-let apijs = fs.readFileSync("netlify/functions/api.js", "utf8");
-apijs = apijs.replace("const data = null;", `const data = ${data_str};`);
-fs.writeFileSync("netlify/functions/api.js", apijs, "utf8");
+if (!DEV) {
+  let apijs = fs.readFileSync("netlify/functions/api.js", "utf8");
+  apijs = apijs.replace("const data = null;", `const data = ${data_str};`);
+  fs.writeFileSync("netlify/functions/api.js", apijs, "utf8");
+}
