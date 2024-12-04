@@ -1,7 +1,7 @@
-whose elements are
-which contains
-containing
-consisting of
 comprised of
+consisting of
+containing
 that forms a vector space over the
 that forms an algebra over the
+which contains
+whose elements are

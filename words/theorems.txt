@@ -1,111 +1,111 @@
-fundamental theorem of calculus
-Pythagorean theorem
-Jordan-Chevalley theorem
-Artin-Schreier theorem
-Peano axioms
-inverse function theorem
-Banach fixed point theorem
-Picard-Lindelöf theorem
-Arzelà–Ascoli theorem
-*Lagrange's theorem
-*Cauchy's theorem
-rank-nullity theorem
-first isomorphism theorem
-second isomorphism theorem
-third isomorphism theorem
-fourth isomorphism theorem
-Galois correspondence theorem
-hairy ball theorem
-Sprague-Grundy theorem
-fundamental theorem of arithmetic
-axiom of choice
-Zermelo–Fraenkel axioms
-fundamental theorem of algebra
-Chinese remainder theorem
-fundamental theorem of symmetric polynomials
+ABC conjecture
 alternate interior angles theorem
 angle bisector theorem
 *Arrow's impossibility theorem
+Artin-Schreier theorem
+Arzelà–Ascoli theorem
 autonomous convergence theorem
+axiom of choice
 Aztec diamond theorem
-*Bézout's theorem
+Banach fixed point theorem
+Banach-Tarski paradox
+*Bertrand's paradox
 binomial theorem
-*Sylow's theorems
-*Fermat's little theorem
-*Fermat's last theorem
-*Noether's theorem
-*Hilbert's basis theorem
-Stone-Weierstrass theorem
-Bolzano-Weierstrass theorem
+*Bobkov's inequality
 *Bochner's tube theorem
+Bolzano-Weierstrass theorem
 Brahmagupta theorem
-*Burnside's theorem
 *Burnside's lemma
-*Zorn's lemma
-*CPCTC
+*Burnside's theorem
+*Bézout's theorem
 *Carmichael's theorem
 *Carnot's theorem
-*Schur's lemma
+*Cauchy's theorem
 central limit theorem
-mean value theorem
-intermediate value theorem
 *Ceva's theorem
+Chinese remainder theorem
+Collatz conjecture
+*CPCTC
 *Cramer's rule
 *De Moivre's theorem
+*De Morgan's laws
 *Euclid's theorem
+*Euler's identity
+existence of infinite primes
 exterior angle theorem
 extreme value theorem
 *Fatou's theorem
+*Fermat's last theorem
+*Fermat's little theorem
+first isomorphism theorem
 four color theorem
 Fourier theorem
+fourth isomorphism theorem
 Frobenius theorem
 *Fubini's theorem
+fundamental theorem of algebra
 fundamental theorem of arbitrage-free pricing
-universal property of the tensor product
-*L'Hôpital's rule
-Riemann hypothesis
-spectral theorem
-Poincaré conjecture
-existence of infinite primes
-unprovability of the axiom of choice
-law of large numbers
+fundamental theorem of arithmetic
+fundamental theorem of calculus
+fundamental theorem of symmetric polynomials
+Galois correspondence theorem
+*Goldbach's conjecture
 *Gödel's incompleteness theorem
+hairy ball theorem
+*Heron's formula
+*Hilbert's basis theorem
 impossibility of angle trisection
 infinite monkey theorem
 inscribed angle theorem
-*Heron's formula
-law of sines
-law of cosines
-*Stewart's theorem
-*Ptolemy's theorem
+intermediate value theorem
+inverse function theorem
 *Jacobi's four-square theorem
+Jordan-Chevalley theorem
 *Kawasaki's theorem
 Kepler conjecture
-Banach-Tarski paradox
+*Kronecker's lemma
 *Kruskal's tree theorem
-*Bertrand's paradox
+*L'Hôpital's rule
+*Lagrange's theorem
+law of cosines
+law of large numbers
+law of sines
 *Lie's theorem
 *Maxwell's theorem
+mean value theorem
 no free lunch theorem
+*Noether's theorem
 open mapping theorem
 parallel axis theorem
+parallel postulate
+*Parseval's identity
+Peano axioms
+Picard-Lindelöf theorem
 *Pick's theorem
 pizza theorem
+Poincaré conjecture
+*Ptolemy's theorem
+Pythagorean theorem
 *Rademacher's theorem
-*Bobkov's inequality
+rank-nullity theorem
 rational root theorem
 residue theorem
+Riemann hypothesis
+*Schur's lemma
+second isomorphism theorem
+spectral theorem
+Sprague-Grundy theorem
+*Stewart's theorem
+Stone-Weierstrass theorem
+*Sylow's theorems
+third isomorphism theorem
+twin prime conjecture
 uncountability of the continuum
 universal approximation theorem
-*Von Neumann's theorem
+universal property of the tensor product
+unprovability of the axiom of choice
 *Vieta's formulas
+*Von Neumann's theorem
 well-ordering theorem
-*Kronecker's lemma
-ABC conjecture
-Collatz conjecture
-*Goldbach's conjecture
-twin prime conjecture
-parallel postulate
-*Euler's identity
-*Parseval's identity
-*De Morgan's laws
+Zermelo–Fraenkel axioms
+*Zorn's lemma
