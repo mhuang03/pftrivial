@@ -1,4 +1,4 @@
-3-connected
+#-connected
 *abelian
 *alternating
 *associative
@@ -27,7 +27,7 @@ diagonalizable
 dihedral
 divisible
 *empty
-equicontinuous
+*equicontinuous
 *exact
 finite
 fundamental
@@ -57,7 +57,7 @@ rational
 regular
 Riemann integrable
 semi-decidable
-semisimple
+semi-simple
 separable
 sesquilinear
 simple
