@@ -11,10 +11,26 @@ const renderNewTriviality = () => {
 
 window.addEventListener("DOMContentLoaded", () => {
   renderNewTriviality();
+
   const reloadButton = document.getElementById("reload");
   reloadButton.addEventListener("click", (e) => {
     e.preventDefault();
     renderNewTriviality();
     reloadButton.blur();
+  });
+
+  reloadButton.addEventListener("mousedown", (e) => {
+    e.preventDefault();
+    let tim = setTimeout(() => {
+      let int = setInterval(renderNewTriviality, 100);
+      document.addEventListener("mouseup", (e2) => {
+        e2.preventDefault();
+        clearInterval(int);
+      });
+    }, 500);
+    document.addEventListener("mouseup", (e3) => {
+      e3.preventDefault();
+      clearTimeout(tim);
+    });
   });
 });

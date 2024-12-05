@@ -1,6 +1,6 @@
 node_modules/*
+src/template/build/*
 public/*
 !public/.gitkeep
 netlify/functions/*
 !netlify/functions/.gitkeep
-*/build/*
