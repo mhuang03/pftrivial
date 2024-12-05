@@ -13,15 +13,10 @@ const DEV = process.argv.length == 3 && process.argv[2] === "dev";
 fs.mkdirSync("./public", { recursive: true });
 fs.mkdirSync("./netlify/functions", { recursive: true });
 
-// compile html
-let html = pug.compileFile("./pug/index.pug")({ DEV });
-fs.writeFileSync("./public/index.html", html, "utf8");
-fs.copyFileSync("./public/index.html", "./public/404.html");
-
 // compile js
 await esbuild.build({
   entryPoints: ["./lib/index.js"],
-  outdir: "./public",
+  outdir: "./template/build",
   bundle: true,
   write: true,
   minify: true,
@@ -35,6 +30,20 @@ await esbuild.build({
   platform: "node",
   format: "esm",
 });
+
+// compile css
+await esbuild.build({
+  entryPoints: ["./template/index.css"],
+  outdir: "./template/build",
+  bundle: true,
+  write: true,
+  minify: true,
+});
+
+// compile html
+let html = pug.compileFile("./template/index.pug")({ DEV });
+fs.writeFileSync("./public/index.html", html, "utf8");
+fs.copyFileSync("./public/index.html", "./public/404.html");
 
 // copy over static files
 fs.cpSync("./static/", "./public/", { recursive: true, overwrite: true });

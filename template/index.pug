@@ -8,8 +8,10 @@ html(lang="en")
     link(rel="icon" href="favicon.svg")
     link(rel="mask-icon" href="mask-icon.svg" color="#FFFFFF")
     link(rel="apple-touch-icon" href="apple-touch-icon.png")
-    link(rel='stylesheet' href=`${DEV ? "" : "/"}index.css`)
-    script(src=`${DEV ? "" : "/"}index.js` defer)
+    style
+      include build/index.css
+    script
+      include build/index.js
   body
     .content
       p#intro.sep Proof is trivial!
