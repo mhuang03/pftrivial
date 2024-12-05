@@ -9,20 +9,19 @@ if (process.argv.length > 3) {
 }
 const DEV = process.argv.length == 3 && process.argv[2] === "dev";
 
-// create output folders if nonexistent
+// create public folder if nonexistent
 fs.mkdirSync("./public", { recursive: true });
-fs.mkdirSync("./netlify/functions", { recursive: true });
 
 // compile js
 await esbuild.build({
-  entryPoints: ["./lib/index.js"],
-  outdir: "./template/build",
+  entryPoints: ["./src/lib/index.js"],
+  outdir: "./src/template/build",
   bundle: true,
   write: true,
   minify: true,
 });
 await esbuild.build({
-  entryPoints: ["./lib/api.js"],
+  entryPoints: ["./src/lib/api.js"],
   outdir: "./netlify/functions",
   bundle: true,
   write: true,
@@ -33,17 +32,17 @@ await esbuild.build({
 
 // compile css
 await esbuild.build({
-  entryPoints: ["./template/index.css"],
-  outdir: "./template/build",
+  entryPoints: ["./src/template/index.css"],
+  outdir: "./src/template/build",
   bundle: true,
   write: true,
   minify: true,
 });
 
 // compile html
-let html = pug.compileFile("./template/index.pug")({ DEV });
+let html = pug.compileFile("./src/template/index.pug")({ DEV });
 fs.writeFileSync("./public/index.html", html, "utf8");
 fs.copyFileSync("./public/index.html", "./public/404.html");
 
 // copy over static files
-fs.cpSync("./static/", "./public/", { recursive: true, overwrite: true });
+fs.cpSync("./src/static/", "./public/", { recursive: true, overwrite: true });
