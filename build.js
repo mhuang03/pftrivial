@@ -3,11 +3,11 @@ import pug from "pug";
 import esbuild from "esbuild";
 
 // handle DEV behavior
-if (process.argv.length > 3) {
-  console.error("Expected at most one argument!");
-  process.exit(1);
-}
-const DEV = process.argv.length == 3 && process.argv[2] === "dev";
+// if (process.argv.length > 3) {
+//   console.error("Expected at most one argument!");
+//   process.exit(1);
+// }
+// const DEV = process.argv.length == 3 && process.argv[2] === "dev";
 
 // create public folder if nonexistent
 fs.mkdirSync("./public", { recursive: true });
@@ -40,7 +40,7 @@ await esbuild.build({
 });
 
 // compile html
-let html = pug.compileFile("./src/template/index.pug")({ DEV });
+let html = pug.compileFile("./src/template/index.pug")();
 fs.writeFileSync("./public/index.html", html, "utf8");
 fs.copyFileSync("./public/index.html", "./public/404.html");
 

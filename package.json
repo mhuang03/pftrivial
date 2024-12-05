@@ -2,7 +2,7 @@
   "name": "pftrivial",
   "version": "1.0.0",
   "description": "",
-  "main": "js/build.js",
+  "main": "build.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -12,5 +12,13 @@
   "dependencies": {
     "esbuild": "^0.24.0",
     "pug": "^3.0.3"
+  },
+  "nodemonConfig": {
+    "ignore": [
+      "**/public/**",
+      "**/netlify/**",
+      "**/build/**"
+    ],
+    "ext": "js,css,pug,txt"
   }
 }
