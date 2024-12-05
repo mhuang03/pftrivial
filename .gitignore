@@ -1,3 +1,5 @@
 node_modules/*
 public/*
-netlify/functions/8
+!public/.gitkeep
+netlify/functions/*
+!netlify/functions/.gitkeep
