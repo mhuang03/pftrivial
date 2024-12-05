@@ -20,14 +20,20 @@ fs.copyFileSync("./public/index.html", "./public/404.html");
 
 // compile js
 await esbuild.build({
-  entryPoints: [
-    { in: "./lib/index.js", out: "./public/index" },
-    { in: "./lib/api.js", out: "./netlify/functions/api" },
-  ],
-  outdir: "./",
+  entryPoints: ["./lib/index.js"],
+  outdir: "./public",
   bundle: true,
   write: true,
   minify: true,
+});
+await esbuild.build({
+  entryPoints: ["./lib/api.js"],
+  outdir: "./netlify/functions",
+  bundle: true,
+  write: true,
+  minify: true,
+  platform: "node",
+  format: "esm",
 });
 
 // copy over static files
