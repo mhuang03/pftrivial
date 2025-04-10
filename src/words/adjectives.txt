@@ -1,6 +1,8 @@
 #-connected
 *abelian
+*algebraic
 *alternating
+*antisymmetric
 *associative
 *asymmetric
 bilinear
@@ -9,6 +11,7 @@ canonical
 Cauchy
 clopen
 closed
+coherent
 combinatorial
 commutatitive
 compact
@@ -29,15 +32,22 @@ divisible
 *empty
 *equicontinuous
 *exact
+factorable
 finite
 fundamental
 Galois
 greedy
+Hermitian
+*idempotent
 *infinite
+*integrable
 *invariant
 *irreducible
 Lebesgue-measurable
 left invertible
+Lesbesgue-integrable
+measurable
+nilpotent
 Noetherian
 non-degenerate
 nondeterministic
@@ -53,6 +63,7 @@ planar
 pointless
 prime
 primitive
+quasi-coherent
 rational
 regular
 Riemann integrable
