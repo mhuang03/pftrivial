@@ -6,5 +6,6 @@ exploit
 introduce
 invoke
 involve
+leverage
 use
 utilize
