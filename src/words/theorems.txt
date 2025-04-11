@@ -52,6 +52,7 @@ Galois correspondence theorem
 *Goldbach's conjecture
 *Gödel's incompleteness theorem
 hairy ball theorem
+ham sandwich theorem
 *Heron's formula
 *Hilbert's basis theorem
 impossibility of angle trisection
@@ -88,6 +89,7 @@ Poincaré conjecture
 Pythagorean theorem
 *Rademacher's theorem
 rank-nullity theorem
+*Rankine-Hugoniot conditions
 rational root theorem
 residue theorem
 Riemann hypothesis
