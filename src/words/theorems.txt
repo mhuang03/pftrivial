@@ -14,13 +14,14 @@ binomial theorem
 *Bobkov's inequality
 *Bochner's tube theorem
 Bolzano-Weierstrass theorem
-Brahmagupta theorem
+*Brahmagupta's theorem
 *Burnside's lemma
 *Burnside's theorem
 *Bézout's theorem
 *Carmichael's theorem
 *Carnot's theorem
 *Cauchy's theorem
+Cauchy-Schwarz inequality
 central limit theorem
 *Ceva's theorem
 Chinese remainder theorem

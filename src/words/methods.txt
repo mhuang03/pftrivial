@@ -1,8 +1,14 @@
+apply(ing) a homomorphism to
 apply(ing) an isomorphism to
 biject(ing) it to
+decompos[e](ing) into
 exhaust(ing) all the cases in
+extend(ing) with
 find(ing) a contradiction using
 induct(ing) on
 map(ping) it to
+project(ing) onto
+reduc[e](ing) it to
 show(ing) the contrapositive using
+transform(ing) it into
 view(ing) the problem as

@@ -1,5 +1,10 @@
 apply
 consider
 employ
+examine
+exploit
+introduce
+invoke
 involve
 use
+utilize
