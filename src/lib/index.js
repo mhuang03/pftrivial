@@ -16,7 +16,7 @@ window.addEventListener("DOMContentLoaded", () => {
   reloadButton.addEventListener("click", (e) => {
     e.preventDefault();
     renderNewTriviality();
-    reloadButton.blur();
+    // reloadButton.blur();
   });
 
   reloadButton.addEventListener("mousedown", (e) => {
