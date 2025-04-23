@@ -11,6 +11,7 @@ Banach fixed point theorem
 Banach-Tarski paradox
 *Bertrand's paradox
 binomial theorem
+Blakers–Massey theorem
 *Bobkov's inequality
 *Bochner's tube theorem
 Bolzano-Weierstrass theorem
@@ -30,6 +31,7 @@ Collatz conjecture
 *Cramer's rule
 *De Moivre's theorem
 *De Morgan's laws
+Dold-Thom theorem
 *Euclid's theorem
 *Euler's identity
 existence of infinite primes
@@ -42,6 +44,7 @@ first isomorphism theorem
 four color theorem
 Fourier theorem
 fourth isomorphism theorem
+Freudenthal suspension theorem
 Frobenius theorem
 *Fubini's theorem
 fundamental theorem of algebra
@@ -56,6 +59,7 @@ hairy ball theorem
 ham sandwich theorem
 *Heron's formula
 *Hilbert's basis theorem
+homotopy excision theorem
 impossibility of angle trisection
 infinite monkey theorem
 inscribed angle theorem

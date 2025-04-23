@@ -60,15 +60,17 @@ hypergeometric
 *idempotent
 *incompressible
 *independent
+*indiscrete
 *infinite
 *infinite-dimensional
 *integrable
 *invariant
 *irrational
 *irreducible
+Lebesgue-integrable
 Lebesgue-measurable
 left invertible
-Lebesgue-integrable
+local
 measurable
 monotonic
 nilpotent
@@ -78,6 +80,7 @@ nondeterministic
 nonsingular
 nontrivial
 normal
+normed
 *open
 *orientable
 *orthogonal
@@ -98,6 +101,7 @@ rigid
 self-similar
 semidecidable
 semilinear
+seminormed
 semisimple
 separable
 sesquilinear
@@ -109,6 +113,7 @@ smooth
 sparse
 stochastic
 structure-preserving
+sublinear
 thrice-differentiable
 topological
 total
