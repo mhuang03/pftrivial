@@ -17,7 +17,7 @@ clopen
 closed
 coherent
 combinatorial
-commutatitive
+commutative
 compact
 complete
 composite
@@ -68,7 +68,7 @@ hypergeometric
 *irreducible
 Lebesgue-measurable
 left invertible
-Lesbesgue-integrable
+Lebesgue-integrable
 measurable
 monotonic
 nilpotent
