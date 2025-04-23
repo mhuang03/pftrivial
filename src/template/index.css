@@ -19,6 +19,10 @@ a, p {
   color: inherit;
 }
 
+a:hover, a:focus {
+  color: blue;
+}
+
 .word, .sep {
   margin: 5px;
 }
@@ -77,6 +81,7 @@ a, p {
 
 #reload:hover>#relicon, #reload:focus>#relicon {
   animation-play-state: running;
+  color: blue;
 }
 
 #qed {
