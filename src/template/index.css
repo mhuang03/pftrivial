@@ -1,5 +1,5 @@
 body {
-  margin-top: 40px;
+  margin: 40px;
 }
 
 .content {
@@ -7,9 +7,19 @@ body {
   flex-direction: column;
   text-align: center;
   align-items: center;
+  width: max-content;
+  max-width: 100%;
+  overflow: auto;
+  margin: auto;
 }
 
-p {
+a, p {
+  margin: 0;
+  text-decoration: none;
+  color: inherit;
+}
+
+.word, .sep {
   margin: 5px;
 }
 
@@ -38,21 +48,39 @@ p {
 #reload {
   color: black;
   background: none;
-  border: none;
-  width: 30px;
-  margin-top: 30px;
-  padding: 0px;
+  font: inherit;
+  width: max-content;
+  border: 2px solid black;
+  border-radius: 30px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 10px;
+  padding: 10px;
 }
 
 #reload:hover {
   cursor: pointer;
 }
 
+#reltext {
+  font-size: 25px;
+  margin: auto 0;
+  display: inline-block;
+}
+
 #relicon {
+  width: 30px;
   animation: rotating 2s linear infinite;
   animation-play-state: paused;
 }
 
 #reload:hover>#relicon, #reload:focus>#relicon {
   animation-play-state: running;
+}
+
+#qed {
+  width: 100%;
+  text-align: right;
+  padding-top: 10px;
 }

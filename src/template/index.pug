@@ -12,15 +12,26 @@ html(lang="en")
       include build/index.css
     script
       include build/index.js
+    base(target="_blank")
   body
     .content
       p#intro.sep Proof is trivial!
-      p#adj1.word
-      p#noun1.word
+      a#adj1.word
+      a#noun1.word
       p#cont.sep
-      p#adj2.word
-      p#noun2.word
-      p#hint.sep
+      a#adj2.word
+      a#noun2.word
+      div.sep
+        | (Hint: 
+        span#hint
+        a#thm
+        | )
+      div#qed
+        svg(width="25px" height="25px", viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg")
+          a(href="https://mathworld.wolfram.com/QED.html" target="_blank")
+            rect(x="0", y="0", width="25", height="25", fill="#000000")
+
       button#reload
-        svg#relicon(width="100%", height="100%", viewBox="0 0 24 24", fill="none", xmlns="http://www.w3.org/2000/svg")
+        p#reltext Gimme another! 
+        svg#relicon(width="100%" height="100%" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg")
           path(d="M2 14C2 14 2.12132 14.8492 5.63604 18.364C9.15076 21.8787 14.8492 21.8787 18.364 18.364C19.6092 17.1187 20.4133 15.5993 20.7762 14M2 14V20M2 14H8M22 10C22 10 21.8787 9.15076 18.364 5.63604C14.8492 2.12132 9.15076 2.12132 5.63604 5.63604C4.39076 6.88131 3.58669 8.40072 3.22383 10M22 10V4M22 10H16", stroke="currentColor", stroke-width="2", stroke-linecap="round", stroke-linejoin="round")
