@@ -1,6 +1,13 @@
 doctype html
 html(lang="en")
   head
+    script(async='' src='https://www.googletagmanager.com/gtag/js?id=G-9C6FV94J89')
+    script.
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-9C6FV94J89');
+
     title Proof is Trivial!
     meta(charset="utf-8")
     meta(name="description" content="A website for all your trivializing needs! Explains every mathematical proof you could ever write.")
