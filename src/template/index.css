@@ -85,6 +85,10 @@ button {
   margin: 0;
 }
 
+button:hover {
+  cursor: pointer;
+}
+
 svg {
   display: block;
 }
@@ -132,7 +136,6 @@ svg {
 }
 
 #share {
-  margin: 12px;
   position: relative;
 }
 
@@ -151,12 +154,13 @@ svg {
 #shareicon {
   min-width: 25px;
   min-height: 25px;
+  margin: 12px;
+  display: block;
 }
 
-#shareicon:hover {
+button:hover > #shareicon, button:focus > #shareicon {
   cursor: pointer;
   color: blue;
-  display: block;
 }
 
 #githubicon {
