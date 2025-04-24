@@ -9,13 +9,22 @@ html, body {
   flex-direction: column;
   text-align: center;
   align-items: center;
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.proof {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
   width: fit-content;
   max-width: 100%;
   min-width: min-content;
   height: 100%;
-  overflow: auto;
   margin: auto;
-  padding: 30px 15px;
   box-sizing: border-box;
 }
 
@@ -46,6 +55,40 @@ a:hover, a:focus {
   margin-top: 0px;
 }
 
+#qed {
+  width: 100%;
+  text-align: right;
+  padding-top: 10px;
+}
+
+#qedicon {
+  width: 25px;
+  display: inline-block;
+}
+
+#sticky {
+  width: 100%;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+button {
+  color: black;
+  background: none;
+  font: inherit;
+  border: none;
+  padding: 0;
+  margin: 0;
+}
+
+svg {
+  display: block;
+}
+
 @keyframes rotating {
   from {
     transform: rotate(0deg);
@@ -55,17 +98,7 @@ a:hover, a:focus {
   }
 }
 
-#sticky {
-  flex-grow: 1;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
-}
-
 #reload {
-  color: black;
-  background: none;
-  font: inherit;
   width: max-content;
   border: 2px solid black;
   border-radius: 30px;
@@ -82,7 +115,7 @@ a:hover, a:focus {
 }
 
 #reltext {
-  font-size: 25px;
+  font-size: 20px;
   margin: auto 0;
   display: inline-block;
 }
@@ -98,10 +131,39 @@ a:hover, a:focus {
   color: blue;
 }
 
-#qed {
-  width: 100%;
-  text-align: right;
-  padding-top: 10px;
+#share {
+  margin: 12px;
+  position: relative;
+}
+
+.tooltip {
+  position: absolute;
+  z-index: 1;
+  bottom: 5px;
+  left: 150%;
+  visibility: hidden;
+}
+
+.show {
+  visibility: visible;
+}
+
+#shareicon {
+  min-width: 25px;
+  min-height: 25px;
+}
+
+#shareicon:hover {
+  cursor: pointer;
+  color: blue;
+  display: block;
+}
+
+#githubicon {
+  width: 30px;
+  height: 30px;
+  display: block;
+  margin: 12px;
 }
 
 @media (width < 80rem) { 
@@ -130,6 +192,9 @@ a:hover, a:focus {
     font-size: 25px;
   }
   .content {
-    padding: 20px 10px;
+    padding: 10px;
+  }
+  #qedicon {
+    width: 20px;
   }
 }

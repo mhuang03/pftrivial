@@ -3,7 +3,7 @@ alternate interior angles theorem
 angle bisector theorem
 *Arrow's impossibility theorem
 Artin-Schreier theorem
-Arzelà–Ascoli theorem
+Arzelà-Ascoli theorem
 autonomous convergence theorem
 axiom of choice
 Aztec diamond theorem
@@ -11,7 +11,7 @@ Banach fixed point theorem
 Banach-Tarski paradox
 *Bertrand's paradox
 binomial theorem
-Blakers–Massey theorem
+Blakers-Massey theorem
 *Bobkov's inequality
 *Bochner's tube theorem
 Bolzano-Weierstrass theorem
@@ -114,5 +114,5 @@ unprovability of the axiom of choice
 *Vieta's formulas
 *Von Neumann's theorem
 well-ordering theorem
-Zermelo–Fraenkel axioms
+Zermelo-Fraenkel axioms
 *Zorn's lemma
