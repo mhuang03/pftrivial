@@ -1,5 +1,7 @@
-body {
-  margin: 40px;
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
 }
 
 .content {
@@ -7,10 +9,14 @@ body {
   flex-direction: column;
   text-align: center;
   align-items: center;
-  width: max-content;
+  width: fit-content;
   max-width: 100%;
+  min-width: min-content;
+  height: 100%;
   overflow: auto;
   margin: auto;
+  padding: 30px 15px;
+  box-sizing: border-box;
 }
 
 a, p {
@@ -49,6 +55,13 @@ a:hover, a:focus {
   }
 }
 
+#sticky {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
 #reload {
   color: black;
   background: none;
@@ -61,6 +74,7 @@ a:hover, a:focus {
   justify-content: center;
   gap: 10px;
   padding: 10px;
+  max-height: min-content;
 }
 
 #reload:hover {
@@ -88,4 +102,34 @@ a:hover, a:focus {
   width: 100%;
   text-align: right;
   padding-top: 10px;
+}
+
+@media (width < 80rem) { 
+  .word {
+    font-size: 60px;
+  }
+  .sep {
+    font-size: 35px;
+  }
+}
+
+@media (width < 60rem) { 
+  .word {
+    font-size: 50px;
+  }
+  .sep {
+    font-size: 30px;
+  }
+}
+
+@media (width < 40rem) { 
+  .word {
+    font-size: 40px;
+  }
+  .sep {
+    font-size: 25px;
+  }
+  .content {
+    padding: 20px 10px;
+  }
 }

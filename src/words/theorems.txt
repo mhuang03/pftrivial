@@ -94,7 +94,7 @@ Poincaré conjecture
 Pythagorean theorem
 *Rademacher's theorem
 rank-nullity theorem
-*Rankine-Hugoniot conditions
+Rankine-Hugoniot conditions
 rational root theorem
 residue theorem
 Riemann hypothesis
