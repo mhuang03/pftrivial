@@ -18,7 +18,7 @@ const renderNewTriviality = (t) => {
     url.searchParams.delete("t");
   }
   document.getElementById("share").setAttribute("data-url", url.toString());
-  history.replaceState({}, document.title, url.toString());
+  // history.replaceState({}, document.title, url.toString());
 };
 
 window.addEventListener("DOMContentLoaded", () => {
@@ -81,7 +81,6 @@ window.addEventListener("DOMContentLoaded", () => {
     if (navigator.share) {
       navigator.share({
         title: "Proof is Trivial!",
-        text: "Check out this proof!",
         url: shareButton.getAttribute("data-url"),
       });
     } else {
