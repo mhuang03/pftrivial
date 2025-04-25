@@ -37,7 +37,6 @@ window.addEventListener("DOMContentLoaded", () => {
         if (field == "adj1Vowel" || field == "thmNoThe") continue; // boolean fields
         t[field] = decodeURIComponent(t[field]);
       }
-      console.log(t);
     } catch (e) {
       // remove invalid t param from url
       url.searchParams.delete("t");
