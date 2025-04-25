@@ -12,35 +12,42 @@ const renderNewTriviality = (t) => {
     elem.title = `Search for \"${t[field]}\" on Wolfram MathWorld`;
   }
 
-  // escape all fields of t in case they contain special characters
-  for (let field of Object.keys(t)) {
-    if (field == "adj1Vowel" || field == "thmNoThe") continue; // don't escape boolean fields
-    t[field] = encodeURIComponent(t[field]);
-  }
-
-  let b64 = btoa(JSON.stringify(t));
   let url = new URL(window.location.href);
-  url.searchParams.set("t", b64);
+  if (t.slug) {
+    url.searchParams.set("s", t.slug);
+    url.searchParams.delete("t");
+  }
   document.getElementById("share").setAttribute("data-url", url.toString());
+  history.replaceState({}, document.title, url.toString());
 };
 
 window.addEventListener("DOMContentLoaded", () => {
-  // try parsing query param t
   let url = new URL(window.location.href);
-  let b64 = url.searchParams.get("t");
-  let t = null;
-  if (b64) {
+  let t;
+
+  if (url.searchParams.has("s")) {
+    let slug = url.searchParams.get("s");
     try {
-      t = JSON.parse(atob(b64));
-      // unescape all fields of t
+      t = generateTriviality(slug);
+    } catch (e) {
+      t = generateTriviality();
+      // remove invalid slug from url
+      url.searchParams.delete("s");
+      history.replaceState({}, document.title, url.toString());
+    }
+  } else if (url.searchParams.has("t")) {
+    // backwards compatibility
+    try {
+      t = JSON.parse(atob(url.searchParams.get("t")));
       for (let field of Object.keys(t)) {
         if (field == "adj1Vowel" || field == "thmNoThe") continue; // boolean fields
         t[field] = decodeURIComponent(t[field]);
       }
     } catch (e) {
-      // remove invalid t param from url
+      t = generateTriviality();
+      // remove invalid slug from url
       url.searchParams.delete("t");
-      history.replaceState(null, "", url.toString());
+      history.replaceState({}, document.title, url.toString());
     }
   } else {
     t = generateTriviality();
