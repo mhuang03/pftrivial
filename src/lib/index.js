@@ -14,6 +14,7 @@ const renderNewTriviality = (t) => {
 
   // escape all fields of t in case they contain special characters
   for (let field of Object.keys(t)) {
+    if (field == "adj1Vowel" || field == "thmNoThe") continue; // don't escape boolean fields
     t[field] = encodeURIComponent(t[field]);
   }
 
@@ -33,8 +34,10 @@ window.addEventListener("DOMContentLoaded", () => {
       t = JSON.parse(atob(b64));
       // unescape all fields of t
       for (let field of Object.keys(t)) {
+        if (field == "adj1Vowel" || field == "thmNoThe") continue; // boolean fields
         t[field] = decodeURIComponent(t[field]);
       }
+      console.log(t);
     } catch (e) {
       // remove invalid t param from url
       url.searchParams.delete("t");
