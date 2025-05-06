@@ -10,7 +10,7 @@
   "license": "ISC",
   "type": "module",
   "dependencies": {
-    "esbuild": "^0.24.0",
+    "esbuild": "^0.25.4",
     "pug": "^3.0.3"
   },
   "nodemonConfig": {
