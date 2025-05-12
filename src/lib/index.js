@@ -3,12 +3,18 @@ import { generateTriviality } from "./utils";
 const renderNewTriviality = (t) => {
   if (!t) t = generateTriviality();
 
-  document.getElementById("intro").innerText = `Proof is trivial! ${t.degr} ${t.method} ${t.adj1Vowel ? "an" : "a"}`;
-  document.getElementById("hint").innerText = `${t.use} ${t.thmNoThe ? "" : "the "}`;
+  document.getElementById("intro").innerText = `Proof is trivial! ${t.degr} ${
+    t.method
+  } ${t.adj1Vowel ? "an" : "a"}`;
+  document.getElementById("hint").innerText = `${t.use} ${
+    t.thmNoThe ? "" : "the "
+  }`;
   for (let field of ["adj1", "adj2", "cont", "noun1", "noun2", "thm"]) {
     let elem = document.getElementById(field);
     elem.innerText = t[field];
-    elem.href = `https://mathworld.wolfram.com/search/?query=${encodeURIComponent(t[field])}`;
+    elem.href = `https://mathworld.wolfram.com/search/?query=${encodeURIComponent(
+      t[field]
+    )}`;
     elem.title = `Search for \"${t[field]}\" on Wolfram MathWorld`;
   }
 
@@ -78,19 +84,10 @@ window.addEventListener("DOMContentLoaded", () => {
   const shareButton = document.getElementById("share");
   shareButton.addEventListener("click", (e) => {
     e.preventDefault();
+    navigator.clipboard.writeText(shareButton.getAttribute("data-url"));
     if (navigator.share) {
       navigator.share({
-        title: "Proof is Trivial!",
         url: shareButton.getAttribute("data-url"),
-      });
-    } else {
-      navigator.clipboard.writeText(shareButton.getAttribute("data-url")).then(() => {
-        // show copied message tooltip
-        let tooltip = document.getElementById("copysuccess");
-        tooltip.classList.add("show");
-        setTimeout(() => {
-          tooltip.classList.remove("show");
-        }, 2000);
       });
     }
   });
